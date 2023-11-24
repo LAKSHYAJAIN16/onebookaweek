@@ -1,0 +1,18 @@
+.carousel {
+    zoom: 2;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-family: degular, sans-serif;
+    font-weight: 600;
+    height: 250px;
+}
+
+.car-container {
+    display: flex;
+    justify-content: center;
+}
+
+.cara-book {
+    width: 150px;
+}
