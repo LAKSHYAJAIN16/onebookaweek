@@ -1,18 +1,70 @@
 .carousel {
-    zoom: 2;
-    text-align: center;
-    margin-top: 10px;
-    color: white;
-    font-family: degular, sans-serif;
-    font-weight: 600;
-    height: 250px;
+  zoom: 2;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-family: degular, sans-serif;
+  font-weight: 600;
+  height: 200px;
 }
 
 .car-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .cara-book {
-    width: 150px;
+  width: 130px;
+  border-radius: 25px;
+}
+
+.car-left {
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.car-left-week {
+  text-align: left !important;
+  font-size: 20px;
+  color: red !important;
+  margin-bottom: 0px;
+}
+
+.car-left-thisweek {
+  margin-bottom: 0px;
+  margin-top: -10px;
+  font-size: 40px;
+}
+
+.car-left-quote {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.car-left-text {
+  width: 475px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 300 !important;
+}
+
+.car-left-join-button {
+  margin-top: 25px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 25px;
+  background-color: #210124;
+  font-family: "Nabla";
+  font-palette: --2;
+  font-size: 20px;
+  border: 2px solid blue;
+  outline: none;
+  cursor: pointer;
+  transition: ease all 0.1s;
+}
+
+.car-left-join-button:hover {
+    scale: 1.1;
 }
