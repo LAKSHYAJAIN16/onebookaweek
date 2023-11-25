@@ -188,7 +188,7 @@
 
 :root {
   --font-logo: "Nabla";
-  --font-main: "deregular", sans-serif;
+  --font-main: "degular", sans-serif;
   --bg-col : #210124;
 }
 
@@ -204,6 +204,7 @@
 .font-main {
   font-family: var(--font-main);
 }
+
 
 .bg {
   background: var(--bg-col);

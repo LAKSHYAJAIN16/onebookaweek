@@ -8,11 +8,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg font-main">
+      <body className="bg font-main ml-5 ">
         {/* Navbar */}
-        <div id="Navbar" className="mt-4 fixed flex items-center">
+        <div className="mt-4 sticky flex items-center">
           <a href="/">
-            <div class="font-logo-purple ml-5 text-5xl">onebookaweek</div>
+            <div class="font-logo-purple text-5xl">onebookaweek</div>
           </a>
           <div class="ml-5 flex items-center">
             <a className="font-logo ml-28 text-3xl cursor-pointer">
@@ -26,7 +26,8 @@ export default function RootLayout({ children }) {
             </a>
           </div>
         </div>
-        {children}
+
+        <main className="mt-10">{children}</main>
       </body>
     </html>
   );
