@@ -187,13 +187,18 @@
 }
 
 :root {
-  --font-logo: "Nabla", sans-serif;
+  --font-logo: "Nabla";
   --font-main: "deregular", sans-serif;
   --bg-col : #210124;
 }
 
 .font-logo {
   font-family: var(--font-logo);
+}
+
+.font-logo-purple {
+  font-family: var(--font-logo);
+  font-palette: --1;
 }
 
 .font-main {
