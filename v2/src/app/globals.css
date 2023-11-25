@@ -201,6 +201,11 @@
   font-palette: --1;
 }
 
+.font-logo-blue {
+  font-family: var(--font-logo);
+  font-palette: --2;
+}
+
 .font-main {
   font-family: var(--font-main);
 }
