@@ -36,13 +36,23 @@ export default function Home() {
       </section>
 
       {/* Carousel */}
-      <section className="mt-20 font-main flex justify-center scale-95">
+      <section className="mt-20 font-main flex justify-center scale-100">
         {/* Left */}
         <div>
           {/* Head */}
           <section>
-            <h1 className="text-3xl font-bold text-red-500">Week #31</h1>
-            <p className="text-6xl font-bold text-white">Siege and Storm</p>
+            <h1 className="text-3xl font-bold text-red-500">#31</h1>
+
+            {/* Stars */}
+            {/* <div className="mt-3 mb-0 flex">
+              <img src="/star.png" className="w-4"/>
+              <img src="/star.png" className="w-4"/>
+              <img src="/star.png" className="w-4"/>
+              <img src="/half-star.png" className="w-4"/>
+              <img src="/gray-boi.png" className="w-4"/>
+            </div> */}
+            
+            <p className=" text-6xl font-logo font-bold text-white">Siege and Storm</p>
             <p className="text-sm text-white font-bold text-right">
               Leigh Bardugo
             </p>
@@ -76,10 +86,10 @@ export default function Home() {
       {/* The Goal */}
       <section className="mt-[18px]">
         <h1 className="font-logo-green font-bold text-white text-center text-7xl">
-          the vision
+          the challenge
         </h1>
-        <p className="text-center font-main text-white text-4xl mt-3 font-bold">
-          we're a subscription service
+        <p className="text-center font-main text-white text-4xl mt-6 font-bold">
+          1.) we're a subscription service.
         </p>
       </section>
     </div>
