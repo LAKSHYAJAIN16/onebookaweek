@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -118,17 +119,42 @@ export default function Home() {
 
           {/* Cards */}
           <div className="flex justify-evenly mt-7">
-            <div className="w-[30%] h-56 bg-white rounded-3xl shadow-2xl shadow-white">
-              <img></img>
-              <h1 className="text-black text-center font-bold text-4xl">Self-Help</h1>
-              <p className="text-center">4 books / month</p>
-            </div>
-            <div>
+            <div className="w-[30%] h-80 bg-white rounded-3xl shadow-2xl shadow-white flex flex-col">
+              <div
+                id="images-self-help"
+                className="mt-2 mb-0 flex justify-center items-center"
+              >
+                <img
+                  src="/perm/self-help-flavour/robin.jpg"
+                  className="mb-0 opacity-100 w-[90px] h-[138px]"
+                ></img>
+                <img
+                  src="/perm/self-help-flavour/the-monk.jpg"
+                  className="mb-0 ml-[-50px] opacity-100 w-[90px] h-[138px]"
+                ></img>
+                <img
+                  src="/perm/self-help-flavour/alc.jpg"
+                  className="mb-0 ml-[-30px] z-40 w-[140px] h-[241px] rounded-3xl shadow-2xl shadow-red-500"
+                ></img>
+                <img
+                  src="/perm/self-help-flavour/robin.jpg"
+                  className="mb-0 ml-[-30px] rotate-6 opacity-100 w-[90px] h-[138px]"
+                ></img>
+                <img
+                  src="/perm/self-help-flavour/the-monk.jpg"
+                  className="mb-0 ml-[-50px] rotate-12 opacity-100 w-[90px] h-[138px]"
+                ></img>
+              </div>
 
+              <div className="">
+                <h1 className="text-black text-center font-bold text-4xl">
+                  Self-Help
+                </h1>
+                <p className="text-center">4 books / month</p>
+              </div>
             </div>
-            <div>
-
-            </div>
+            <div></div>
+            <div></div>
           </div>
         </section>
       </section>
