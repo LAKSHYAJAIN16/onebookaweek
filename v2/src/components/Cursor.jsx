@@ -1,7 +1,5 @@
 "use client";
 
-import { TweenLite } from "gsap/gsap-core";
-import 'gsap/CSSPlugin'
 import { useRef, useEffect } from "react";
 
 export default function Cursor() {
@@ -16,6 +14,14 @@ export default function Cursor() {
         const link = links[m];
         link.addEventListener("mouseenter", onLink);
         link.addEventListener("mouseout", outLink)
+    }
+
+    // Get all images
+    const images = document.querySelectorAll("img");
+    for (let n = 0; n < images.length; n++) {
+      const img = images[n];
+      img.addEventListener("mouseenter", onImg);
+      img.addEventListener("mouseout", outImg)
     }
   }, [])
   
@@ -34,6 +40,14 @@ export default function Cursor() {
 
   function outLink(){
     cursor.current.classList.remove("custom-cursor--link");
+  }
+
+  function onImg(){
+    cursor.current.classList.add("custom-cursor--img");
+  }
+
+  function outImg(){
+    cursor.current.classList.remove("custom-cursor--img");
   }
 
   return (

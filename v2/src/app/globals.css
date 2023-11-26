@@ -244,3 +244,7 @@
 .custom-cursor--link {
   transform: translate(-50%, -50%) scale(0.7);
 }
+
+.custom-cursor--img {
+  mix-blend-mode: normal;
+}
