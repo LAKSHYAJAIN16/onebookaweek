@@ -190,6 +190,7 @@
   --font-logo: "Nabla";
   --font-main: "degular", sans-serif;
   --bg-col : #210124;
+  --bg-toned : #000000;
 }
 
 .font-logo {
@@ -217,6 +218,10 @@
 
 .bg {
   background: var(--bg-col);
+}
+
+.bg-toned {
+  background: var(--bg-toned);
 }
 
 .custom-cursor {
