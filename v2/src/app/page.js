@@ -1,6 +1,23 @@
+"use client"
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [discussionPostAmount, setDiscussionPostAmount] = useState(18000);
+  const [copydeliveredAmount, setCopydeliveredAmount] = useState(12000);
+  const [discussionPostAm, setDiscussionPostAm] = useState(0);
+  const [copydeliveredAm, setCopydeliveredAm] = useState(0);
+  const RATE_CONSTANT = 1000
+  useEffect(() => {
+      if(discussionPostAmount > discussionPostAm){
+        setDiscussionPostAm(discussionPostAm + Math.floor(discussionPostAmount / RATE_CONSTANT))
+      }
+      if(copydeliveredAmount > copydeliveredAm){
+        setCopydeliveredAm(copydeliveredAm + Math.floor(copydeliveredAmount / RATE_CONSTANT))
+      }
+  }, [discussionPostAm, copydeliveredAm])
+  
   return (
     <div>
       {/* Epic Header */}
@@ -29,13 +46,18 @@ export default function Home() {
           </section>
 
           {/* The genres */}
-          <section className="mt-10">
+          <section className="mt-5">
             <p className="font-logo-purple text-3xl">
               fantasy. romance. love story.
             </p>
           </section>
 
-          {/*  */}
+          {/* Counter */}
+          <section>
+            <br />
+            <p className="font-bold font-main text-white text-3xl">{copydeliveredAm.toLocaleString()} copies delivered</p>
+            <p className="font-bold font-main text-white text-3xl">{discussionPostAm.toLocaleString()} discussion posts</p>
+          </section>
         </div>
 
         {/* Image */}
