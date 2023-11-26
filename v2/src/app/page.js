@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -8,16 +8,21 @@ export default function Home() {
   const [copydeliveredAmount, setCopydeliveredAmount] = useState(12000);
   const [discussionPostAm, setDiscussionPostAm] = useState(0);
   const [copydeliveredAm, setCopydeliveredAm] = useState(0);
-  const RATE_CONSTANT = 1000
+  const RATE_CONSTANT = 1000;
+
   useEffect(() => {
-      if(discussionPostAmount > discussionPostAm){
-        setDiscussionPostAm(discussionPostAm + Math.floor(discussionPostAmount / RATE_CONSTANT))
-      }
-      if(copydeliveredAmount > copydeliveredAm){
-        setCopydeliveredAm(copydeliveredAm + Math.floor(copydeliveredAmount / RATE_CONSTANT))
-      }
-  }, [discussionPostAm, copydeliveredAm])
-  
+    if (discussionPostAmount > discussionPostAm) {
+      setDiscussionPostAm(
+        discussionPostAm + Math.floor(discussionPostAmount / RATE_CONSTANT)
+      );
+    }
+    if (copydeliveredAmount > copydeliveredAm) {
+      setCopydeliveredAm(
+        copydeliveredAm + Math.floor(copydeliveredAmount / RATE_CONSTANT)
+      );
+    }
+  }, [discussionPostAm, copydeliveredAm]);
+
   return (
     <div>
       {/* Epic Header */}
@@ -31,11 +36,9 @@ export default function Home() {
       </section>
 
       {/* Carousel */}
-      <section className="mt-20 font-main flex justify-center">
-
+      <section className="mt-20 font-main flex justify-center scale-95">
         {/* Left */}
         <div>
-
           {/* Head */}
           <section>
             <h1 className="text-3xl font-bold text-red-500">Week #31</h1>
@@ -55,8 +58,12 @@ export default function Home() {
           {/* Counter */}
           <section>
             <br />
-            <p className="font-bold font-main text-white text-3xl">{copydeliveredAm.toLocaleString()} copies delivered</p>
-            <p className="font-bold font-main text-white text-3xl">{discussionPostAm.toLocaleString()} discussion posts</p>
+            <p className="font-bold text-white text-3xl">
+              {copydeliveredAm.toLocaleString()} copies delivered
+            </p>
+            <p className="font-bold text-white text-3xl">
+              {discussionPostAm.toLocaleString()} discussion posts
+            </p>
           </section>
         </div>
 
@@ -64,6 +71,16 @@ export default function Home() {
         <div>
           <img src="/siege.jpg" className="w-60 ml-20"></img>
         </div>
+      </section>
+
+      {/* The Goal */}
+      <section className="mt-[18px]">
+        <h1 className="font-logo-green font-bold text-white text-center text-7xl">
+          the vision
+        </h1>
+        <p className="text-center font-main text-white text-4xl mt-3 font-bold">
+          we're a subscription service
+        </p>
       </section>
     </div>
   );

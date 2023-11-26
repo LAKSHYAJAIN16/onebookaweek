@@ -206,6 +206,11 @@
   font-palette: --2;
 }
 
+.font-logo-green {
+  font-family: var(--font-logo);
+  font-palette: --5;
+}
+
 .font-main {
   font-family: var(--font-main);
 }
