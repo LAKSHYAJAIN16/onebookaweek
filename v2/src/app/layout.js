@@ -1,4 +1,5 @@
 import "./globals.css";
+import Cursor from "@/components/Cursor";
 
 export const metadata = {
   title: "Create Next App",
@@ -10,19 +11,20 @@ export default function RootLayout({ children }) {
     <html className="cursor-none" lang="en">
       <body className="bg font-main">
         {/* Navbar */}
+        <Cursor />
         <div className="pb-3 border-b-2 border-b-gray-500 bg">
           <div className="mt-4 sticky flex items-center ml-5 bg">
             <a>
-              <div className="font-logo-purple text-5xl ml-3">onebookaweek</div>
+              <div className="font-logo-purple text-5xl ml-3 hover:tracking-widest transition-all">onebookaweek</div>
             </a>
             <div className="ml-0 flex items-center">
-              <a className="font-logo ml-28 text-3xl">
+              <a className="font-logo ml-28 text-3xl hover:tracking-wide transition-all">
                 <h2>the challenge</h2>
               </a>
-              <a className="font-logo ml-28 text-3xl">
+              <a className="font-logo ml-28 text-3xl hover:tracking-wide transition-all">
                 <h2>discussion</h2>
               </a>
-              <a className="font-logo ml-28 text-3xl">
+              <a className="font-logo ml-28 text-3xl hover:tracking-wide transition-all">
                 <h2>archives</h2>
               </a>
             </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { followingDotCursor } from "cursor-effects";
+import Cursor from "@/components/Cursor";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -22,13 +22,6 @@ export default function Home() {
       );
     }
   }, [discussionPostAm, copydeliveredAm]);
-
-  useEffect(() => {
-    new followingDotCursor({
-      color : ["#ffffff"]
-    });
-  }, [])
-  
 
   return (
     <div>
@@ -91,7 +84,7 @@ export default function Home() {
       </section>
 
       {/* The Goal */}
-      <section className="mt-[18px]">
+      <section className="mt-[55px]">
         <h1 className="font-logo-green font-bold text-white text-center text-7xl">
           the challenge
         </h1>
