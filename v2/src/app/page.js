@@ -26,7 +26,7 @@ export default function Home() {
           do you have what it takes?
         </h1>
         <p className="text-center font-main text-white text-4xl mt-3 font-bold">
-          take back your life. book by book.
+          take your life back. book by book.
         </p>
       </section>
 
