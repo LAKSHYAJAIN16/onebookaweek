@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className="cursor-none" lang="en">
-      <body className="bg font-main">
+      <body className="bg font-main overflow-x-hidden">
         {/* Navbar */}
         <Cursor />
         <div className="pb-3 border-b-2 border-b-gray-500 bg">

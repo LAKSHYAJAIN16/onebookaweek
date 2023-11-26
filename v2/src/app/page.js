@@ -31,15 +31,15 @@ export default function Home() {
           do you have what it takes?
         </h1>
         <p className="text-center font-main text-white text-4xl mt-3 font-bold">
-          take your life back. week by week. book by book.
+          take your life back. book by book.
         </p>
       </section>
 
       {/* Carousel */}
-      <div className="w-full flex justify-center items-center flex-col mt-20">
+      <div className="w-full flex justify-center items-center flex-col mt-20 scale-110 ">
         <section className="bg-toned shadow-2xl shadow-white pl-28 pr-28 pt-8 pb-8 rounded-3xl border-4 border-white">
           {/* Left */}
-          <h1 className="text-3xl font-bold text-red-500">31</h1>
+          <h1 className="text-3xl font-bold text-white">this week</h1>
           <div className="mt-5 font-main flex justify-center scale-100">
             <div>
               {/* Head */}
@@ -91,15 +91,46 @@ export default function Home() {
         </section>
       </div>
 
-      {/* The Goal */}
-      <section className="mt-[80px]">
-        <h1 className="font-logo-green font-bold text-white text-center text-8xl">
-          the challenge
-        </h1>
-        <p className="text-left ml-[20%] font-main text-white text-5xl mt-8 font-bold">
-          1.) 52 weeks. 52 books
+      {/* 52 weeks. 52 books */}
+      {/* <section className="mt-[80px]">
+        <p className="text-center font-logo text-white text-8xl mt-8 font-bold">
+          who are we?
         </p>
-        <p className="text-left ml-[20%] font-main text-white text-2xl">reading = epic</p>
+        <p className="text-center font-main font-bold text-white text-3xl">
+          we're a subscription service aimed at connecting bookworms and making reading as fun as possible.
+        </p>
+      </section> */}
+
+      {/* The Challenge */}
+      <section className="mt-[80px]">
+        <p className="text-center font-logo-green text-white text-8xl mt-8 font-bold">
+          the challenge
+        </p>
+
+        {/* Step 1 */}
+        <section className="ml-[20%] mr-[20%] mt-7">
+          <h1 className="text-center text-black font-bold text-3xl w-10 h-10 rounded-full bg-white">
+            1
+          </h1>
+          <h2 className="text-left text-white font-bold text-6xl">
+            choose your flavour
+          </h2>
+
+          {/* Cards */}
+          <div className="flex justify-evenly mt-7">
+            <div className="w-[30%] h-56 bg-white rounded-3xl shadow-2xl shadow-white">
+              <img></img>
+              <h1 className="text-black text-center font-bold text-4xl">Self-Help</h1>
+              <p className="text-center">4 books / month</p>
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+          </div>
+        </section>
       </section>
     </div>
   );
