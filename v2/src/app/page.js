@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { followingDotCursor } from "cursor-effects";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -23,11 +23,18 @@ export default function Home() {
     }
   }, [discussionPostAm, copydeliveredAm]);
 
+  useEffect(() => {
+    new followingDotCursor({
+      color : ["#ffffff"]
+    });
+  }, [])
+  
+
   return (
     <div>
       {/* Epic Header */}
       <section>
-        <h1 className="font-logo-blue font-bold text-white text-center text-7xl">
+        <h1 className="font-logo-blue font-bold text-white text-center text-8xl">
           do you have what it takes?
         </h1>
         <p className="text-center font-main text-white text-4xl mt-3 font-bold">
@@ -36,7 +43,7 @@ export default function Home() {
       </section>
 
       {/* Carousel */}
-      <section className="mt-20 font-main flex justify-center scale-100">
+      <section className="mt-28 font-main flex justify-center scale-100">
         {/* Left */}
         <div>
           {/* Head */}
@@ -79,7 +86,7 @@ export default function Home() {
 
         {/* Image */}
         <div>
-          <img src="/siege.jpg" className="w-60 ml-20"></img>
+          <img src="/siege.jpg" className="w-60 ml-20 hover:scale-125 hover:rounded-2xl transition-all"></img>
         </div>
       </section>
 

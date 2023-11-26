@@ -7,22 +7,22 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="bg font-main ">
+    <html className="cursor-none" lang="en">
+      <body className="bg font-main">
         {/* Navbar */}
         <div className="pb-3 border-b-2 border-b-gray-500 bg">
           <div className="mt-4 sticky flex items-center ml-5 bg">
-            <a href="/">
+            <a>
               <div className="font-logo-purple text-5xl ml-3">onebookaweek</div>
             </a>
             <div className="ml-0 flex items-center">
-              <a className="font-logo ml-28 text-3xl cursor-pointer">
+              <a className="font-logo ml-28 text-3xl">
                 <h2>the challenge</h2>
               </a>
-              <a className="font-logo ml-28 text-3xl cursor-pointer">
+              <a className="font-logo ml-28 text-3xl">
                 <h2>discussion</h2>
               </a>
-              <a className="font-logo ml-28 text-3xl cursor-pointer">
+              <a className="font-logo ml-28 text-3xl">
                 <h2>archives</h2>
               </a>
             </div>

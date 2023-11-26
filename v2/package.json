@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cursor-effects": "^1.0.12",
     "firebase": "^10.6.0",
     "next": "14.0.3",
     "react": "^18",
