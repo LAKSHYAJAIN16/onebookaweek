@@ -109,134 +109,154 @@ export default function Home() {
         </p>
 
         {/* Step 1 */}
-        <section className="ml-[10%] mr-[10%] mt-7">
-          <h1 className="text-center text-black font-bold text-3xl w-10 h-10 rounded-full bg-white">
-            1
-          </h1>
-          <h2 className="text-left text-white font-bold text-6xl">
-            choose your flavour
-          </h2>
+        <div className="ml-[5%] mr-[5%]">
+          <section className="mt-7">
+            <h1 className="text-center text-black font-bold text-3xl w-10 h-10 rounded-full bg-white">
+              1
+            </h1>
+            <h2 className="text-left text-white font-bold text-6xl">
+              choose your flavour
+            </h2>
 
-          {/* Cards */}
-          <div className="flex justify-evenly mt-7">
-            <div className="opacity-50 hover:opacity-100 card w-[30%] h-96 bg-white rounded-3xl shadow-2xl shadow-white flex flex-col">
-              <div
-                id="images-self-help"
-                className="flex mt-2 mb-0 justify-center items-center"
-              >
-                <img
-                  src="/perm/self-help-flavour/atomic.jpg"
-                  className="transition-all mb-0 opacity-100 -rotate-12 w-[90px] h-[138px] scale-100"
-                ></img>
+            {/* Cards */}
+            <div className="flex justify-evenly mt-7">
+              <div className="opacity-50 hover:opacity-100 card w-[30%] h-96 bg-white rounded-3xl shadow-2xl shadow-white flex flex-col">
+                <div
+                  id="images-self-help"
+                  className="flex mt-2 mb-0 justify-center items-center"
+                >
+                  <img
+                    src="/perm/self-help-flavour/atomic.jpg"
+                    className="transition-all mb-0 opacity-100 -rotate-12 w-[90px] h-[138px] scale-100"
+                  ></img>
 
-                <img
-                  src="/perm/self-help-flavour/tsaongaf.jpg"
-                  className="transition-all mb-0 ml-[-50px] -rotate-6 opacity-100 w-[90px] h-[138px] scale-100"
-                ></img>
+                  <img
+                    src="/perm/self-help-flavour/tsaongaf.jpg"
+                    className="transition-all mb-0 ml-[-50px] -rotate-6 opacity-100 w-[90px] h-[138px] scale-100"
+                  ></img>
 
-                <img
-                  src="/perm/self-help-flavour/alc.jpg"
-                  className="transition-all mb-0 ml-[-30px] z-40 w-[140px] h-[241px] rounded-3xl shadow-2xl shadow-red-500 scale-100"
-                ></img>
+                  <img
+                    src="/perm/self-help-flavour/alc.jpg"
+                    className="transition-all mb-0 ml-[-30px] z-40 w-[140px] h-[241px] rounded-3xl shadow-2xl shadow-red-500 scale-100"
+                  ></img>
 
-                <img
-                  src="/perm/self-help-flavour/robin.jpg"
-                  className="transition-all mb-0 ml-[-30px] rotate-6 opacity-100 w-[90px] h-[138px] scale-100"
-                ></img>
+                  <img
+                    src="/perm/self-help-flavour/robin.jpg"
+                    className="transition-all mb-0 ml-[-30px] rotate-6 opacity-100 w-[90px] h-[138px] scale-100"
+                  ></img>
 
-                <img
-                  src="/perm/self-help-flavour/obama.jpg"
-                  className="transition-all mb-0 ml-[-50px] rotate-12 opacity-100 w-[90px] h-[138px] scale-100"
-                ></img>
+                  <img
+                    src="/perm/self-help-flavour/obama.jpg"
+                    className="transition-all mb-0 ml-[-50px] rotate-12 opacity-100 w-[90px] h-[138px] scale-100"
+                  ></img>
+                </div>
+
+                <div className="mt-6">
+                  <h1 className="text-black text-center font-bold text-6xl">
+                    Self-Help
+                  </h1>
+                  <p className="text-center font-bold">4 books / month</p>
+                </div>
               </div>
 
-              <div className="mt-6">
-                <h1 className="text-black text-center font-bold text-6xl">
-                  Self-Help
-                </h1>
-                <p className="text-center font-bold">4 books / month</p>
+              <div className="opacity-50 hover:opacity-100 card w-[30%] h-96 bg-white rounded-3xl shadow-2xl shadow-white flex flex-col">
+                <div
+                  id="images-fiction"
+                  className="flex mt-2 mb-0 justify-center items-center"
+                >
+                  <img
+                    src="/perm/fiction-flavour/attwn.jpg"
+                    className="transition-all mb-0 opacity-100 -rotate-12 w-[90px] h-[138px] scale-100"
+                  ></img>
+
+                  <img
+                    src="/perm/fiction-flavour/hp.jpg"
+                    className="transition-all mb-0 ml-[-50px] -rotate-6 opacity-100 w-[90px] h-[138px] scale-100"
+                  ></img>
+
+                  <img
+                    src="/perm/fiction-flavour/pjo.jpg"
+                    className="transition-all mb-0 ml-[-30px] z-40 w-[140px] h-[241px] rounded-3xl shadow-2xl shadow-red-500 scale-100"
+                  ></img>
+
+                  <img
+                    src="/perm/fiction-flavour/soc.jpg"
+                    className="transition-all mb-0 ml-[-30px] rotate-6 opacity-100 w-[90px] h-[138px] scale-100"
+                  ></img>
+
+                  <img
+                    src="/perm/fiction-flavour/tgg.jpg"
+                    className="transition-all mb-0 ml-[-50px] rotate-12 opacity-100 w-[90px] h-[138px] scale-100"
+                  ></img>
+                </div>
+
+                <div className="mt-6">
+                  <h1 className="text-black text-center font-bold text-6xl">
+                    Fiction
+                  </h1>
+                  <p className="text-center font-bold">4 books / month</p>
+                </div>
+              </div>
+
+              <div className="opacity-50 hover:opacity-100 card w-[30%] h-96 bg-white rounded-3xl shadow-2xl shadow-white flex flex-col">
+                <div
+                  id="images-romance"
+                  className="flex mt-2 mb-0 justify-center items-center"
+                >
+                  <img
+                    src="/perm/romance-flavour/igyb.jpg"
+                    className="transition-all mb-0 opacity-100 -rotate-12 w-[90px] h-[138px] scale-100"
+                  ></img>
+
+                  <img
+                    src="/perm/romance-flavour/pap.jpg"
+                    className="transition-all mb-0 ml-[-50px] -rotate-6 opacity-100 w-[90px] h-[138px] scale-100"
+                  ></img>
+
+                  <img
+                    src="/perm/romance-flavour/romeo.jpg"
+                    className="transition-all mb-0 ml-[-30px] z-40 w-[140px] h-[241px] rounded-3xl shadow-2xl shadow-red-500 scale-100"
+                  ></img>
+
+                  <img
+                    src="/perm/romance-flavour/tbbc.jpg"
+                    className="transition-all mb-0 ml-[-30px] rotate-6 opacity-100 w-[90px] h-[138px] scale-100"
+                  ></img>
+
+                  <img
+                    src="/perm/romance-flavour/tsitp.jpg"
+                    className="transition-all mb-0 ml-[-50px] rotate-12 opacity-100 w-[90px] h-[138px] scale-100"
+                  ></img>
+                </div>
+
+                <div className="mt-6">
+                  <h1 className="text-black text-center font-bold text-6xl">
+                    Romance
+                  </h1>
+                  <p className="text-center font-bold">4 books / month</p>
+                </div>
               </div>
             </div>
+          </section>
 
-            <div className="opacity-50 hover:opacity-100 card w-[30%] h-96 bg-white rounded-3xl shadow-2xl shadow-white flex flex-col">
-              <div
-                id="images-fiction"
-                className="flex mt-2 mb-0 justify-center items-center"
-              >
-                <img
-                  src="/perm/fiction-flavour/attwn.jpg"
-                  className="transition-all mb-0 opacity-100 -rotate-12 w-[90px] h-[138px] scale-100"
-                ></img>
+          <section className="mt-14">
+            <h1 className="text-center text-black font-bold text-3xl w-10 h-10 rounded-full bg-white">
+              2
+            </h1>
+            <h2 className="text-left text-white font-bold text-6xl">
+              read the books
+            </h2>
+          </section>
 
-                <img
-                  src="/perm/fiction-flavour/hp.jpg"
-                  className="transition-all mb-0 ml-[-50px] -rotate-6 opacity-100 w-[90px] h-[138px] scale-100"
-                ></img>
-
-                <img
-                  src="/perm/fiction-flavour/pjo.jpg"
-                  className="transition-all mb-0 ml-[-30px] z-40 w-[140px] h-[241px] rounded-3xl shadow-2xl shadow-red-500 scale-100"
-                ></img>
-
-                <img
-                  src="/perm/fiction-flavour/soc.jpg"
-                  className="transition-all mb-0 ml-[-30px] rotate-6 opacity-100 w-[90px] h-[138px] scale-100"
-                ></img>
-
-                <img
-                  src="/perm/fiction-flavour/tgg.jpg"
-                  className="transition-all mb-0 ml-[-50px] rotate-12 opacity-100 w-[90px] h-[138px] scale-100"
-                ></img>
-              </div>
-
-              <div className="mt-6">
-                <h1 className="text-black text-center font-bold text-6xl">
-                  Fiction
-                </h1>
-                <p className="text-center font-bold">4 books / month</p>
-              </div>
-            </div>
-
-            <div className="opacity-50 hover:opacity-100 card w-[30%] h-96 bg-white rounded-3xl shadow-2xl shadow-white flex flex-col">
-              <div
-                id="images-romance"
-                className="flex mt-2 mb-0 justify-center items-center"
-              >
-                <img
-                  src="/perm/romance-flavour/igyb.jpg"
-                  className="transition-all mb-0 opacity-100 -rotate-12 w-[90px] h-[138px] scale-100"
-                ></img>
-
-                <img
-                  src="/perm/romance-flavour/pap.jpg"
-                  className="transition-all mb-0 ml-[-50px] -rotate-6 opacity-100 w-[90px] h-[138px] scale-100"
-                ></img>
-
-                <img
-                  src="/perm/romance-flavour/romeo.jpg"
-                  className="transition-all mb-0 ml-[-30px] z-40 w-[140px] h-[241px] rounded-3xl shadow-2xl shadow-red-500 scale-100"
-                ></img>
-
-                <img
-                  src="/perm/romance-flavour/tbbc.jpg"
-                  className="transition-all mb-0 ml-[-30px] rotate-6 opacity-100 w-[90px] h-[138px] scale-100"
-                ></img>
-
-                <img
-                  src="/perm/romance-flavour/tsitp.jpg"
-                  className="transition-all mb-0 ml-[-50px] rotate-12 opacity-100 w-[90px] h-[138px] scale-100"
-                ></img>
-              </div>
-
-              <div className="mt-6">
-                <h1 className="text-black text-center font-bold text-6xl">
-                  Romance
-                </h1>
-                <p className="text-center font-bold">4 books / month</p>
-              </div>
-            </div>
-          </div>
-        </section>
+          <section className="mt-14">
+            <h1 className="text-center text-black font-bold text-3xl w-10 h-10 rounded-full bg-white">
+              3
+            </h1>
+            <h2 className="text-left text-white font-bold text-6xl">
+              discuss
+            </h2>
+          </section>
+        </div>
       </section>
     </div>
   );
