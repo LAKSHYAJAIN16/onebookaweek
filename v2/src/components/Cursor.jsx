@@ -5,23 +5,23 @@ import { useRef, useEffect } from "react";
 export const INDEX_TO_CLASSES = [
   [
     ["-rotate-12", "w-[90px]", "h-[138px]", "scale-100"],
-    ["mr-2", "ml-0", "h-[168.7px]", "w-[98px]"],
+    ["mr-0", "ml-0", "h-[241px]", "w-[140px]", "scale-90"],
   ],
   [
     ["-rotate-6", "w-[90px]", "h-[138px]", "ml-[-50px]", "scale-100"],
-    ["mr-2", "ml-0", "h-[168.7px]", "w-[98px]"],
+    ["mr-0", "ml-0", "h-[241px]", "w-[140px]", "scale-90"],
   ],
   [
     ["rounded-3xl", "shadow-2xl", "shadow-red-500", "ml-[-30px]", "scale-100"],
-    ["mr-2", "ml-0",, "h-[168.7px]", "w-[98px]"],
+    ["mr-0", "ml-0", "scale-90"],
   ],
   [
     ["rotate-6", "w-[90px]", "h-[138px]", "ml-[-30px]", "scale-100"],
-    ["mr-2", "ml-0", "h-[168.7px]", "w-[98px]"],
+    ["mr-0", "ml-0", "h-[241px]", "w-[140px]", "scale-90"],
   ],
   [
     ["rotate-12", "w-[90px]", "h-[138px]", "ml-[-50px]", "scale-100"],
-    ["h-[168.7px]", "w-[98px]"],
+    ["h-[241px]", "ml-0", "w-[140px]", "scale-90"],
   ],
 ];
 
