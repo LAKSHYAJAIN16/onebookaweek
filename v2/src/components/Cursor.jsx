@@ -4,24 +4,24 @@ import { useRef, useEffect } from "react";
 
 export const INDEX_TO_CLASSES = [
   [
-    ["-rotate-12", "w-[90px]", "h-[138px]"],
-    ["mr-10", "h-[241px]", "w-[140px]"],
+    ["-rotate-12", "w-[90px]", "h-[138px]", "scale-100"],
+    ["mr-0", "h-[241px]", "w-[140px]", "scale-90"],
   ],
   [
-    ["-rotate-6", "w-[90px]", "h-[138px]", "ml-[-50px]"],
-    ["mr-10", "h-[241px]", "w-[140px]"],
+    ["-rotate-6", "w-[90px]", "h-[138px]", "ml-[-50px]", "scale-100"],
+    ["mr-0", "h-[241px]", "w-[140px]", "scale-90"],
   ],
   [
-    ["rounded-3xl", "shadow-2xl", "shadow-red-500", "ml-[-30px]"],
-    [""],
+    ["rounded-3xl", "shadow-2xl", "shadow-red-500", "ml-[-30px]", "scale-100"],
+    ["mr-0", "scale-90"],
   ],
   [
-    ["-rotate-6", "w-[90px]", "h-[138px]", "ml-[-50px]"],
-    ["mr-10", "h-[241px]", "w-[140px]"],
+    ["rotate-6", "w-[90px]", "h-[138px]", "ml-[-30px]", "scale-100"],
+    ["mr-0", "h-[241px]", "w-[140px]", "scale-90"],
   ],
   [
-    ["-rotate-6", "w-[90px]", "h-[138px]", "ml-[-50px]"],
-    ["mr-10", "h-[241px]", "w-[140px]"],
+    ["rotate-12", "w-[90px]", "h-[138px]", "ml-[-50px]", "scale-100"],
+    ["h-[241px]", "w-[140px]", "scale-90"],
   ],
 ];
 
@@ -79,19 +79,44 @@ export default function Cursor() {
     cursor.current.classList.add("custom-cursor--link");
 
     // Get Image Holder
-    const image_holder = e.target.firstChild();
+    const image_holder = e.target.firstChild;
     image_holder.classList.add("z-50");
 
     // Get All Images
     const images = image_holder.children;
     for (let n = 0; n < images.length; n++) {
       const img = images[n];
+      const subtract = INDEX_TO_CLASSES[n][0];
+      const add = INDEX_TO_CLASSES[n][1];
+      for (let kk = 0; kk < subtract.length; kk++) {
+        img.classList.remove(subtract[kk]);
+      }
+      for (let mmm = 0; mmm < add.length; mmm++) {
+        img.classList.add(add[mmm]);
+      }
     }
   }
 
   function outCard(e) {
-    console.log(e.target);
+    // Update Cursor
     cursor.current.classList.remove("custom-cursor--link");
+
+    // Get Image Holder
+    const image_holder = e.target.firstChild;
+
+    // Get All Images
+    const images = image_holder.children;
+    for (let n = 0; n < images.length; n++) {
+      const img = images[n];
+      const subtract = INDEX_TO_CLASSES[n][0];
+      const add = INDEX_TO_CLASSES[n][1];
+      for (let kk = 0; kk < subtract.length; kk++) {
+        img.classList.add(subtract[kk]);
+      }
+      for (let mmm = 0; mmm < add.length; mmm++) {
+        img.classList.remove(add[mmm]);
+      }
+    }
   }
 
   function onImg() {
