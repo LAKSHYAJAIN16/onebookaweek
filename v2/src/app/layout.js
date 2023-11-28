@@ -24,10 +24,10 @@ export default function RootLayout({ children }) {
                 <h2>the challenge</h2>
               </a>
               <a className="font-logo ml-28 text-3xl hover:tracking-wide transition-all">
-                <h2>discussion</h2>
+                <h2>weeks</h2>
               </a>
               <a className="font-logo ml-28 text-3xl hover:tracking-wide transition-all">
-                <h2>archives</h2>
+                <h2>discussion</h2>
               </a>
             </div>
           </div>
