@@ -10,8 +10,10 @@ export default function RootLayout({ children }) {
   return (
     <html className="cursor-none" lang="en">
       <body className="bg font-main overflow-x-hidden">
-        {/* Navbar */}
+        {/* Cursor BS */}
         <Cursor />
+
+        {/* Navbar */}
         <div className="pb-3 border-b-2 border-b-gray-500 bg">
           <div className="mt-4 sticky flex items-center ml-5 bg">
             <a>
@@ -30,8 +32,17 @@ export default function RootLayout({ children }) {
             </div>
           </div>
         </div>
-        {/* <div className="shadow-2xl shadow-white w-full h-10 bg-white mt-2"></div> */}
+
+        {/* Actual Content */}
         <main className="mt-10">{children}</main>
+
+        {/* Footer */}
+        <div>
+          <br />
+          <hr>
+          </hr>
+          <h1 className="ml-10 mt-5 mb-5 font-bold font-main text-white text-center">A Lakshya Jain Project ©</h1>
+        </div>
       </body>
     </html>
   );
