@@ -31,27 +31,28 @@ export default function Home() {
           do you have what it takes?
         </h1>
         <p className="text-center font-main text-white text-4xl mt-3 font-bold">
-          one book a week. for the rest of your life.
-        </p>
-        <p className="text-center font-main text-red-500 text-4xl mt-3 font-bold">
-          WARNING : this challenge not for the timid hearted.
+          one book a week. 4 books a month. 52 books a year.
         </p>
       </section>
 
       {/* 52 weeks. 52 books */}
-      {/* <section className="mt-[80px]">
+      <section className="mt-[80px]">
         <p className="text-center font-logo text-white text-8xl mt-8 font-bold">
           who are we?
         </p>
         <p className="text-center font-main font-bold text-white text-3xl">
           we're a subscription service aimed at connecting bookworms and making reading as fun as possible.
         </p>
-      </section> */}
+      </section>
 
       {/* The Challenge */}
       <section className="mt-[80px]">
         <p className="text-center font-logo-green text-white text-8xl mt-8 font-bold">
           the challenge
+        </p>
+
+        <p className="text-center font-main text-red-500 text-4xl mt-3 font-bold">
+          WARNING : this challenge not for the timid hearted.
         </p>
       </section>
     </div>
