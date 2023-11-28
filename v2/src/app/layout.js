@@ -37,10 +37,7 @@ export default function RootLayout({ children }) {
         <main className="mt-10">{children}</main>
 
         {/* Footer */}
-        <div>
-          <br />
-          <hr>
-          </hr>
+        <div className="mt-20 border-t-1 border-white">
           <h1 className="ml-10 mt-5 mb-5 font-bold font-main text-white text-center">A Lakshya Jain Project ©</h1>
         </div>
       </body>

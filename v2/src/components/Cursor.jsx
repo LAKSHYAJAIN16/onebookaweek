@@ -39,21 +39,12 @@ export default function Cursor() {
       link.addEventListener("mouseout", outLink);
     }
 
-    // Get all cards
-    const cards = document.getElementsByClassName("card");
-    for (let k = 0; k < cards.length; k++) {
-      const card = cards[k];
-      card.addEventListener("mouseenter", onCard);
-      card.addEventListener("mouseleave", outCard);
-    }
-
     // Get all images
     const images = document.querySelectorAll("img");
     for (let n = 0; n < images.length; n++) {
-      // Add some kind of effect man
-      // const img = images[n];
-      // img.addEventListener("mouseenter", onImg);
-      // img.addEventListener("mouseout", outImg)
+      const img = images[n];
+      img.addEventListener("mouseenter", onLink);
+      img.addEventListener("mouseout", outLink);
     }
   }, []);
 
@@ -73,60 +64,7 @@ export default function Cursor() {
   function outLink() {
     cursor.current.classList.remove("custom-cursor--link");
   }
-
-  function onCard(e) {
-    // Update Cursor
-    cursor.current.classList.add("custom-cursor--link");
-
-    // Get Image Holder
-    const image_holder = e.target.firstChild;
-    image_holder.classList.add("z-50");
-
-    // Get All Images
-    const images = image_holder.children;
-    for (let n = 0; n < images.length; n++) {
-      const img = images[n];
-      const subtract = INDEX_TO_CLASSES[n][0];
-      const add = INDEX_TO_CLASSES[n][1];
-      for (let kk = 0; kk < subtract.length; kk++) {
-        img.classList.remove(subtract[kk]);
-      }
-      for (let mmm = 0; mmm < add.length; mmm++) {
-        img.classList.add(add[mmm]);
-      }
-    }
-  }
-
-  function outCard(e) {
-    // Update Cursor
-    cursor.current.classList.remove("custom-cursor--link");
-
-    // Get Image Holder
-    const image_holder = e.target.firstChild;
-
-    // Get All Images
-    const images = image_holder.children;
-    for (let n = 0; n < images.length; n++) {
-      const img = images[n];
-      const subtract = INDEX_TO_CLASSES[n][0];
-      const add = INDEX_TO_CLASSES[n][1];
-      for (let kk = 0; kk < subtract.length; kk++) {
-        img.classList.add(subtract[kk]);
-      }
-      for (let mmm = 0; mmm < add.length; mmm++) {
-        img.classList.remove(add[mmm]);
-      }
-    }
-  }
-
-  function onImg() {
-    cursor.current.classList.add("custom-cursor--img");
-  }
-
-  function outImg() {
-    cursor.current.classList.remove("custom-cursor--img");
-  }
-
+  
   return (
     <>
       <div ref={cursor} id="curs" className="custom-cursor"></div>
