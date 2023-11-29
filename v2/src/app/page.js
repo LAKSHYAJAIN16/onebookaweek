@@ -57,8 +57,13 @@ export default function Home() {
                 </p>
               </section>
 
-              <section>
-                <p>Day 1</p>
+              <section className="text-white flex justify-evenly">
+                <div>
+                  Day 1
+                </div>
+                <div>
+                  Day 2
+                </div>
               </section>
             </div>
 
