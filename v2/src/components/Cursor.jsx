@@ -39,6 +39,14 @@ export default function Cursor() {
       link.addEventListener("mouseout", outLink);
     }
 
+    // Get all links
+    // const buttons = document.querySelectorAll("button");
+    // for (let m = 0; m < buttons.length; m++) {
+    //   const button = buttons[m];
+    //   button.addEventListener("mouseenter", onLink);
+    //   button.addEventListener("mouseout", outLink);
+    // }
+
     // Get all images
     const images = document.querySelectorAll("img");
     for (let n = 0; n < images.length; n++) {
@@ -64,7 +72,7 @@ export default function Cursor() {
   function outLink() {
     cursor.current.classList.remove("custom-cursor--link");
   }
-  
+
   return (
     <>
       <div ref={cursor} id="curs" className="custom-cursor"></div>

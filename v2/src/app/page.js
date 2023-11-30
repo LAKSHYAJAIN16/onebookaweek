@@ -57,13 +57,12 @@ export default function Home() {
                 </p>
               </section>
 
-              <section className="text-white flex justify-evenly">
-                <div>
-                  Day 1
-                </div>
-                <div>
-                  Day 2
-                </div>
+              <section className="flex justify-evenly mt-8">
+                <a href={`/book/${data[data.length - 1]["id"]}`} className="hover:scale-150 transition-all">
+                  <button className="text-black pl-8 pr-8 bg-white pt-2 pb-2 text-xl rounded-2xl transition-all font-bold">
+                    Check it out
+                  </button>
+                </a>
               </section>
             </div>
 
