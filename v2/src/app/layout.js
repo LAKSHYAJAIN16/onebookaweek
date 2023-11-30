@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         {/* Navbar */}
         <div className="pb-3 border-b-2 border-b-gray-500 bg">
           <div className="mt-4 sticky flex items-center ml-5 bg">
-            <a>
+            <a href="/" className="hover:cursor-none">
               <div className="font-logo-purple text-5xl ml-3 hover:tracking-widest transition-all">onebookaweek</div>
             </a>
             <div className="ml-0 flex items-center">

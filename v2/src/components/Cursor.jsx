@@ -40,12 +40,12 @@ export default function Cursor() {
     }
 
     // Get all links
-    // const buttons = document.querySelectorAll("button");
-    // for (let m = 0; m < buttons.length; m++) {
-    //   const button = buttons[m];
-    //   button.addEventListener("mouseenter", onLink);
-    //   button.addEventListener("mouseout", outLink);
-    // }
+    const buttons = document.querySelectorAll("button");
+    for (let m = 0; m < buttons.length; m++) {
+      const button = buttons[m];
+      button.addEventListener("mouseenter", onLink);
+      button.addEventListener("mouseout", outLink);
+    }
 
     // Get all images
     const images = document.querySelectorAll("img");
